@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm House</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+</head>
+<body>
+    <section class="navbar" id="navbar">
+        <h1>Welcome To Farm House</h1>
+        <p>Where Farm meets your home</p>
+        <ul>
+            <li><a href="#navbar">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#login">Login/Register</a></li>
+            <li><a href="#Contact">Contact Us</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </section>
+    <img class="backgroundimage" src="background.jpg" alt="Farm Background">
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <h2 class="variety">Vegetables</h2>
+        <div class="product-container">
+            <div class="product-item">
+                <img src="carrot.jpg" alt="carrot">
+                <h3>Carrot</h3>
+                <p>Fresh Carrot Available</p>
+                <p class="price">Rs.50.00/kg</p>
+                <button class="add-to-cart" onclick="AddedToCart()">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="beetroot.jpg" alt="Beetroot">
+                <h3>Beetroot</h3>
+                <p>Fresh Beetroot Available</p>
+                <p class="price">Rs.45.00/kg</p>
+                <button class="add-to-cart" onclick="AddedToCart()">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="potato.jpg" alt="Potato">
+                <h3>Potato</h3>
+                <p>Fresh Potato Available</p>
+                <p class="price">Rs.35.00/kg</p>
+                <button class="add-to-cart" onclick="AddedToCart()">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="tomato.jpg" alt="Tomato">
+                <h3>Tomato</h3>
+                <p>Fresh Tomato Available</p>
+                <p class="price">Rs.40.00/kg</p>
+                <button class="add-to-cart" onclick="AddedToCart()">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="green chilly.jpg" alt="Green Chilly">
+                <h3>Green Chilly</h3>
+                <p>Fresh Green Chilly Available</p>
+                <p class="price">Rs.150.00/kg</p>
+                <button class="add-to-cart" onclick="AddedToCart()">Add to Cart</button>
+
+            </div>
+            <div class="product-item">
+                <img src="brinjal.jpg" alt="Brinjal">
+                <h3>Brinjal</h3>
+                <p>Fresh Brinjal Available</p>
+                <p class="price">Rs.20.00/kg</p>
+                <button class="add-to-cart" onclick="AddedToCart()">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="ladies finger.jpg" alt="Ladies Finger">
+                <h3>Ladies Finger</h3>
+                <p>Fresh Ladies Finger Available</p>
+                <p class="price">Rs.30.00/kg</p>
+                <button class="add-to-cart" onclick="AddedToCart()">Add to Cart</button>
+
+            </div>
+            <div class="product-item">
+                <img src="cabbage.jpg" alt="Cabbage">
+                <h3>Cabbage</h3>
+                <p>Fresh Cabbage Available</p>
+                <p class="price">Rs.20.00/kg</p>
+                <button class="add-to-cart" onclick="AddedToCart()">Add to Cart</button>
+
+            </div>
+            <div class="product-item">
+                <img src="Bottle Gourd.jpg" alt="Bottle Gourd">
+                <h3>Bottle Gourd</h3>
+                <p>Fresh Bottle Gourd Available</p>
+                <p class="price">Rs.40.00/kg</p>
+                <button class="add-to-cart" onclick="AddedToCart()">Add to Cart</button>
+            </div>
+        </div> 
+        <h2 class="variety">Dairy Products</h2>
+        <div class="product-container">
+          <div class="product-item">
+            <img src="Cow's Milk.jpg" alt="Milk">
+            <h3>Milk</h3>
+            <p>Fresh Milk Available</p>
+            <p class="price">Rs.50.00/lt</p>
+            <button class="add-to-cart" onclick="AddedToCart()">Add to Cart</button>
+           </div>
+            <div class="product-item">
+              <img src="butter.jpg" alt="Butter">
+              <h3>Butter</h3>
+              <p>Fresh Butter Available</p>
+              <p class="price">Rs.200.00/Kg</p>
+              <button class="add-to-cart" onclick="AddedToCart()">Add to Cart</button>
+             </div>
+            <div class="product-item">
+              <img src="ghee.jpg" alt="Ghee">
+              <h3>Ghee</h3>
+              <p>Fresh Ghee Available</p>
+              <p class="price">Rs.500.00/lt</p>
+              <button class="add-to-cart" onclick="AddedToCart()">Add to Cart</button>
+            </div>
+            <div class="product-item">
+              <img src="curd.jpg" alt="Curd">
+              <h3>Curd</h3>
+              <p>Fresh Curd Available</p>
+              <p class="price">Rs.50.00/lt</p>
+              <button class="add-to-cart" onclick="AddedToCart()">Add to Cart</button>
+            </div>
+        </div>
+        <h2 class="variety">Grains</h2>
+        <div class="product-container">
+            <div class="product-item">
+                <img src="rice.jpg" alt="Rice">
+                <h3>Rice</h3>
+                <p>Good Quality Rice Available</p>
+                <p class="price">Rs.110.00/Kg</p>
+                <button class="add-to-cart" onclick="AddedToCart()">Add to Cart</button>
+              </div>
+              <div class="product-item">
+                <img src="wheat.jpg" alt="Wheat">
+                <h3>Wheat</h3>
+                <p>Good Quality Wheat Available</p>
+                <p class="price">Rs.75.00/Kg</p>
+                <button class="add-to-cart" onclick="AddedToCart()">Add to Cart</button>
+              </div>
+              <div class="product-item">
+                <img src="ragi.jpg" alt="Ragi">
+                <h3>Ragi</h3>
+                <p>Good Quality Ragi Available</p>
+                <p class="price">Rs.60.00/Kg</p>
+                <button class="add-to-cart" onclick="AddedToCart()">Add to Cart</button>
+              </div>
+              <div class="product-item">
+                <img src="Urad dhall.jpg" alt="Urad dhall">
+                <h3>Urad Dhall</h3>
+                <p>Good Quality Dhall Available</p>
+                <p class="price">Rs.120.00/Kg</p>
+                <button class="add-to-cart" onclick="AddedToCart()">Add to Cart</button>
+              </div>
+              <div class="product-item">
+                <img src="Gram dhall.jpg" alt="Gram Dhall">
+                <h3>Gram Dhall</h3>
+                <p>Good Quality Dhall Available</p>
+                <p class="price">Rs.90.00/Kg</p>
+                <button class="add-to-cart" onclick="AddedToCart()">Add to Cart</button>
+              </div>
+
+        </div>
+    </section>
+    <section id="login">
+        <h2>Login/Register</h2>
+        <form action="#" method="POST">
+            <label>Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <label>Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>            
+            <button type="submit">Login</button>
+            <p>Create New account <a href="register.html">Register</a></p>
+        </form>
+
+    </section>
+
+    <section id="Contact">
+        <h2>Contact Us</h2>
+        <form method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Welcome to Farm House! We are dedicated to providing the freshest produce and the best service to our customers. Our mission is to connect you with high-quality farm products that enhance your lifestyle.</p>
+        <p>Founded in 2024, we have been committed to sustainable practices and supporting local farmers. Our team is passionate about ensuring that you get the best products straight from the farm to your table.</p>
+        
+        <div class="team">
+            <h3>Meet Our Team</h3>
+            <div class="team-member">
+                <img src="Logesh_image.jpg" alt="Founder">
+                <h4>Logeshwaran</h4>
+                <p>Founder & CEO</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="footer">
+        <ul>
+            <li><a href="#navbar">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#login">Login/Register</a></li>
+            <li><a href="#Contact">Contact Us</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <p>&copy; 2024 Farm House. All rights reserved.</p>
+    </section>
+</body>
+</html>

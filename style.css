@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@media (max-width: 768px) {
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .backgroundimage {
+        height: 50vh;
+    }
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-item {
+        width: 90%;
+        margin: 20px 0;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: rgb(83, 202, 83);
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+}
+
+.navbar p {
+    margin: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 10px 20px;
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.backgroundimage {
+    margin-top: 1px;
+    width: 100%;
+    height: 50vh; 
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.footer {
+   background-color: darkolivegreen;
+   padding: 20px;
+   text-align: center;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.footer li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.footer p {
+    margin-top: 20px;
+    color: white;
+}
+.navbar a:hover,
+.footer a:hover {
+    color: lightgreen;
+    text-decoration: underline;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    width: 300px;
+}
+
+form label, form input, form button {
+    margin: 10px 0;
+    width: 100%;
+}
+
+form button {
+    background-color: rgb(83, 202, 83);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: darkgreen;
+}
+.navbar a {
+    transition: color 0.3s ease;
+}
+
+.backgroundimage {
+    transition: transform 0.3s ease;
+}
+
+.backgroundimage:hover {
+    transform: scale(1.03);
+}
+.products {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: rgb(209, 136, 27);
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.product-item img {
+    transition: transform 0.3s ease;
+}
+.product-item h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.product-item p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.product-item .price {
+    font-weight: bold;
+    color: green;
+    font-size: 1.2rem;
+}
+.add-to-cart {
+    background-color: rgb(83, 202, 83);
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-to-cart:hover {
+    background-color: darkgreen;
+}
+.variety {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: chartreuse;
+    border-radius: 5px; 
+    margin: 20px 0; 
+}
+.contact {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    background-color: rgb(209, 136, 27);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact button {
+    width: 150px;
+    padding: 10px;
+    background-color: rgb(22, 202, 22);
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact button:hover {
+    background-color: darkgreen;
+}
+.about {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    background-color: rgb(209, 136, 27);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.team {
+    margin-top: 30px;
+}
+
+.team h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.team-member {
+    display: inline-block;
+    width: 200px;
+    margin: 0 15px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+}
+
+.team-member h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
